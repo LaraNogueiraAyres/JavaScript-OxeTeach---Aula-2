@@ -1,0 +1,7 @@
+let senha = prompt("Digite sua senha")
+
+novasenha = senha.replaceAll("a", "@").replaceAll("i", "1").replaceAll("o", "0").replaceAll(" ", "");
+
+console.log(novasenha)
+
+
