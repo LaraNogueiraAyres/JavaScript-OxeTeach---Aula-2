@@ -1,0 +1,28 @@
+ let numero1 = Number(prompt("Escolha um numero entre 1 e 6"))
+ let numero2 = Number(prompt("Escolha um numero entre 1 e 6"))
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min) + min);
+}
+
+let dado = getRandomInt(1, 6)
+
+let difnumero1 = Math.abs(dado - numero1)
+let difnumero2 = Math.abs(dado - numero2)
+
+console.log(`o numero sorteado foi ${dado}`)
+
+if (difnumero1 > difnumero2)
+{
+  console.log("Jogador 2 vence")
+}
+else if (difnumero1 < difnumero2)
+{
+  console.log("Jogador 1 vence")
+}
+else
+{
+  console.log("Empate!")
+}
