@@ -1,0 +1,14 @@
+ let numero = Number(prompt("Escolha um numero entre 1 e 6"))
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min) + min);
+}
+
+let dado = getRandomInt(1, 6)
+
+if (dado == numero)
+{
+  console.log("Parabéns, você acertou!")
+} else console.log(`Que pena, o número sorteado foi ${dado}`)
