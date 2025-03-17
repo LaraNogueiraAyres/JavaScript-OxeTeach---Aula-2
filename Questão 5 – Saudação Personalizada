@@ -1,0 +1,8 @@
+let nome = prompt("Digite seu nome")
+
+let nome2 = nome.slice(1, nome.lenght)
+let nome3 = nome2.toLowerCase()
+console.log(nome[0].toUpperCase())
+console.log(nome3)
+
+console.log(`Olá, ${nome[0].toUpperCase()}${nome3}, seja bem-vindo(a)!`)
