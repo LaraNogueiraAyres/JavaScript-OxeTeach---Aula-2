@@ -1,0 +1,34 @@
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min) + min);
+}
+
+let aleatorio = getRandomInt(1, 100)
+
+let count = 0
+
+let numero = Number(prompt("Escolha um numero entre 1 e 100"))
+
+while (numero != aleatorio)
+  {
+    if (numero < aleatorio)
+    {
+      console.log("Esse numero é menor do que o numero gerado")
+    }
+
+    else if (numero > aleatorio)
+    {
+      console.log("Esse numero é maior do que o numero gerado")
+    }
+
+    numero = Number(prompt("Escolha outro numero entre 1 e 100"))
+
+    count++
+  }
+
+  if (numero == aleatorio)
+  {
+      console.log(`O numero ${numero} esta correto e levou ${count} tentativas`)
+  }
